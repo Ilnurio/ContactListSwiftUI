@@ -12,13 +12,10 @@
 		46549C042A53050900B02E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46549C032A53050900B02E7B /* Assets.xcassets */; };
 		46549C072A53050900B02E7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46549C062A53050900B02E7B /* Preview Assets.xcassets */; };
 		46549C102A5307BA00B02E7B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C0F2A5307BA00B02E7B /* Person.swift */; };
-		46549C172A5307E700B02E7B /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C132A5307E700B02E7B /* PersonsListViewController.swift */; };
-		46549C182A5307E700B02E7B /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C142A5307E700B02E7B /* ContactsListViewController.swift */; };
-		46549C192A5307E700B02E7B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C152A5307E700B02E7B /* TabBarViewController.swift */; };
-		46549C1A2A5307E700B02E7B /* PersonsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C162A5307E700B02E7B /* PersonsDetailViewController.swift */; };
 		46549C1C2A530AE000B02E7B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C1B2A530AE000B02E7B /* DataStore.swift */; };
 		46549C1E2A53112F00B02E7B /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C1D2A53112F00B02E7B /* ContactListView.swift */; };
 		46549C202A53114B00B02E7B /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C1F2A53114B00B02E7B /* PersonListView.swift */; };
+		46549C222A53160D00B02E7B /* PersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C212A53160D00B02E7B /* PersonInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,13 +25,10 @@
 		46549C032A53050900B02E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46549C062A53050900B02E7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46549C0F2A5307BA00B02E7B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		46549C132A5307E700B02E7B /* PersonsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
-		46549C142A5307E700B02E7B /* ContactsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
-		46549C152A5307E700B02E7B /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		46549C162A5307E700B02E7B /* PersonsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsDetailViewController.swift; sourceTree = "<group>"; };
 		46549C1B2A530AE000B02E7B /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		46549C1D2A53112F00B02E7B /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		46549C1F2A53114B00B02E7B /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
+		46549C212A53160D00B02E7B /* PersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +85,7 @@
 				46549C012A53050800B02E7B /* ContentView.swift */,
 				46549C1D2A53112F00B02E7B /* ContactListView.swift */,
 				46549C1F2A53114B00B02E7B /* PersonListView.swift */,
+				46549C212A53160D00B02E7B /* PersonInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,20 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				46549C1B2A530AE000B02E7B /* DataStore.swift */,
-				46549C122A5307E700B02E7B /* ViewControllers */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		46549C122A5307E700B02E7B /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				46549C132A5307E700B02E7B /* PersonsListViewController.swift */,
-				46549C142A5307E700B02E7B /* ContactsListViewController.swift */,
-				46549C152A5307E700B02E7B /* TabBarViewController.swift */,
-				46549C162A5307E700B02E7B /* PersonsDetailViewController.swift */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,14 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46549C1E2A53112F00B02E7B /* ContactListView.swift in Sources */,
+				46549C222A53160D00B02E7B /* PersonInfoView.swift in Sources */,
 				46549C102A5307BA00B02E7B /* Person.swift in Sources */,
 				46549C1C2A530AE000B02E7B /* DataStore.swift in Sources */,
 				46549C022A53050800B02E7B /* ContentView.swift in Sources */,
 				46549C002A53050800B02E7B /* ContactListSwiftUIApp.swift in Sources */,
-				46549C172A5307E700B02E7B /* PersonsListViewController.swift in Sources */,
-				46549C1A2A5307E700B02E7B /* PersonsDetailViewController.swift in Sources */,
-				46549C192A5307E700B02E7B /* TabBarViewController.swift in Sources */,
-				46549C182A5307E700B02E7B /* ContactsListViewController.swift in Sources */,
 				46549C202A53114B00B02E7B /* PersonListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

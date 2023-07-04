@@ -11,7 +11,10 @@ struct ContentView: View {
     var body: some View {
         // создаем нижний тапбар
         TabView {
-            ContactListView()
+            ContactListView(
+                navigationName: "Contacts",
+                person: Person.getContactList()
+            )
                 .tabItem {
                     Image(systemName: "person")
                     Text("Contacts")
