@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct PersonListView: View {
+    let person: [Person]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                ForEach(person) { person in
+                    Section(header: Text(person.fullName)) {
+                        HStack {
+                            Image(systemName: "phone")
+                                .foregroundColor(.blue)
+                            Text("\(person.mobilePhone)")
+                        }
+                        HStack {
+                            Image(systemName: "mail")
+                                .foregroundColor(.blue)
+                            Text("\(person.eMail)")
+                        }
+                    }
+                }
+                .headerProminence(.increased)
+            }
+            .listStyle(.plain)
+            .navigationTitle("Person Info")
+        }
     }
 }
 
 struct PersonListView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonListView()
+        PersonListView(person: Person.getContactList())
     }
 }
