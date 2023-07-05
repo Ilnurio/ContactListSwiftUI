@@ -31,7 +31,7 @@ final class DataStore {
         "Robert",
         "Marina",
         "Ivan",
-        "Karina",
+        "Karen",
         "Armen",
         "Ruslan"
     ]
@@ -41,8 +41,8 @@ final class DataStore {
         "Frolov",
         "Ginadyan",
         "Isakyan",
-        "Slunko",
-        "Ganeev",
+        "Sarkisyan",
+        "Sidorov",
         "Ahmedov",
         "Viktorov",
         "Popov",

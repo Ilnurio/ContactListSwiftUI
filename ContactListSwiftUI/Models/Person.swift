@@ -5,7 +5,7 @@
 //  Created by Ilnur on 29.04.2023.
 //
 
-class Person: Identifiable {
+final class Person: Identifiable {
     
     let id: String
     let name: String
@@ -69,6 +69,11 @@ class Person: Identifiable {
         }
         
         return persons
+    }
+    
+    static func getOnePerson() -> Person {
+        let newPerson = Person(id: "1", name: "Ilnur", surname: "Fattakhov", eMail: "@mail,ru", mobilePhone: "888")
+        return newPerson
     }
 }
 

@@ -8,15 +8,39 @@
 import SwiftUI
 
 struct PersonInfoView: View {
-    let person: [Person]
+    let person: Person
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(systemName: "person.circle")
+                .resizable()
+                .frame(width: 100, height: 100)
+            HStack {
+                Image(systemName: "iphone.gen1")
+                Text("\(person.mobilePhone)")
+            }
+            HStack {
+                Image(systemName: "mail")
+                Text("\(person.eMail)")
+            }
+            Button(action: {}) {
+                Text("return to Contact List")
+                    .foregroundColor(.black)
+                    .font(.system(size: 20))
+            }
+                .frame(width: 200, height: 60)
+                .cornerRadius(20)
+                .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .stroke(Color.black, lineWidth: 4)
+                )
+            Spacer()
+        }
+        .padding()
     }
 }
 
 struct PersonInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonInfoView(person: Person.getContactList())
+        PersonInfoView(person: Person.getOnePerson())
     }
 }

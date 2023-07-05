@@ -16,6 +16,7 @@
 		46549C1E2A53112F00B02E7B /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C1D2A53112F00B02E7B /* ContactListView.swift */; };
 		46549C202A53114B00B02E7B /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C1F2A53114B00B02E7B /* PersonListView.swift */; };
 		46549C222A53160D00B02E7B /* PersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46549C212A53160D00B02E7B /* PersonInfoView.swift */; };
+		46A193212A55B2810016E14D /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A193202A55B2810016E14D /* ContactRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		46549C1D2A53112F00B02E7B /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		46549C1F2A53114B00B02E7B /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
 		46549C212A53160D00B02E7B /* PersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoView.swift; sourceTree = "<group>"; };
+		46A193202A55B2810016E14D /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				46549C1D2A53112F00B02E7B /* ContactListView.swift */,
 				46549C1F2A53114B00B02E7B /* PersonListView.swift */,
 				46549C212A53160D00B02E7B /* PersonInfoView.swift */,
+				46A193202A55B2810016E14D /* ContactRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				46549C1C2A530AE000B02E7B /* DataStore.swift in Sources */,
 				46549C022A53050800B02E7B /* ContentView.swift in Sources */,
 				46549C002A53050800B02E7B /* ContactListSwiftUIApp.swift in Sources */,
+				46A193212A55B2810016E14D /* ContactRowView.swift in Sources */,
 				46549C202A53114B00B02E7B /* PersonListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
