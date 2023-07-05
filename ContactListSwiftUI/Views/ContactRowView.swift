@@ -12,20 +12,11 @@ struct ContactRowView: View {
     let person: Person
     
     var body: some View {
-        Button(action: {isPresented.toggle()}) {
-            HStack {
-                Text("\(person.fullName)")
-                    .frame(width: 120, alignment: .leading)
-                Text("\(person.mobilePhone)")
-                    .frame(alignment: .leading)
-                
-                Spacer()
-                
-                Text("\(person.eMail)")
-            }
-        }
-        .sheet(isPresented: $isPresented) {
-            PersonInfoView(person: person)
+        HStack {
+            Text("\(person.fullName)")
+                .frame(width: 200, alignment: .leading)
+            Text("\(person.mobilePhone)")
+                .frame(alignment: .leading)
         }
     }
 }

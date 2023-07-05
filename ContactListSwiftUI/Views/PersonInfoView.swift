@@ -23,19 +23,11 @@ struct PersonInfoView: View {
                 Image(systemName: "mail")
                 Text("\(person.eMail)")
             }
-            Button(action: {}) {
-                Text("return to Contact List")
-                    .foregroundColor(.black)
-                    .font(.system(size: 20))
-            }
-                .frame(width: 200, height: 60)
-                .cornerRadius(20)
-                .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous)
-                    .stroke(Color.black, lineWidth: 4)
-                )
+
             Spacer()
         }
         .padding()
+        .navigationTitle("\(person.fullName)")
     }
 }
 
