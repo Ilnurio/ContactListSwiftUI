@@ -11,28 +11,25 @@ struct PersonInfoView: View {
     let person: Person
     
     var body: some View {
-        VStack {
-            Image(systemName: "person.circle")
-                .resizable()
-                .frame(width: 100, height: 100)
+        List {
             HStack {
-                Image(systemName: "iphone.gen1")
-                Text("\(person.mobilePhone)")
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .padding()
+                Spacer()
             }
-            HStack {
-                Image(systemName: "mail")
-                Text("\(person.eMail)")
-            }
-
-            Spacer()
+            
+            Label(person.mobilePhone, systemImage: "phone")
+            Label(person.email, systemImage: "tray")
         }
-        .padding()
-        .navigationTitle("\(person.fullName)")
+        .navigationTitle(person.fullName)
     }
 }
 
 struct PersonInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonInfoView(person: Person.getOnePerson())
+        PersonInfoView(person: Person.getContactList().first!)
     }
 }

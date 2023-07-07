@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct ContactListView: View {
-    let navigationName: String
     let person: [Person]
     
     var body: some View {
         NavigationStack {
             List(person) { person in
-                NavigationLink(destination: PersonInfoView(person: person)) {
-                    ContactRowView(person: person)
-                }
+                NavigationLink(
+                    person.fullName,
+                    destination: PersonInfoView(person: person)
+                )
             }
             .listStyle(.plain)
-        .navigationTitle(navigationName)
+        .navigationTitle("Contacts")
         }
     }
 }
 
 struct ContactListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactListView(navigationName: "Contacts", person: Person.getContactList())
+        ContactListView(person: Person.getContactList())
     }
 }
