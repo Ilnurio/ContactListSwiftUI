@@ -14,8 +14,8 @@ struct PersonListView: View {
         NavigationStack {
             List(person) { person in
                 Section(header: Text(person.fullName).font(.headline)) {
-                    Label(person.mobilePhone, image: "phone")
-                    Label(person.email, image: "tray")
+                    Label(person.mobilePhone, systemImage: "phone")
+                    Label(person.email, systemImage: "tray")
                 }
             }
             .listStyle(.plain)
